@@ -1,0 +1,65 @@
+---
+title: "Analyzing Housing Construction and Availability Trends in Canada"
+author:
+  - "Amrita Ajay Sagar (T00733775)"
+  - "Anupama Chalil Velluva (T00728437)"
+  - "Sarab Nidhaan Singh (T00735745)"
+date: "2023-11-28"
+output:
+  pdf_document: 
+     
+     toc: true
+     toc_depth: 1
+     number_sections: true
+     
+  html_document:
+    
+    toc: true
+    toc_float: true
+---
+\newpage
+\maketitle
+\thispagestyle{empty}
+\clearpage
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+## Background
+This project aims to examine the trends and patterns of housing construction and availability in Canada, using data from 2009 to 2022. The data is obtained from Statistics Canada, a reliable source of official statistics on various aspects of the country. The data allows us to explore the complex interplay between the supply and demand of housing units.
+
+## Objectives
+Investigate housing construction trends from 2009 to 2022.
+Analyze housing availability patterns during the same period.
+Identify correlations between housing construction rates and housing availability.
+Explore regional variations in construction and availability trends.  
+
+## Hypotheses
+There is a significant correlation between housing construction rates and housing availability.
+Regional variations in construction and availability trends will be evident.
+
+
+# Data Collection  
+
+## Data Source
+This project relies on information from Statistics Canada, a reliable source for official data about Canada. Statistics Canada gathers and studies information on the country's economy, society, and environment through surveys, censuses, and other records. This data is accessible to the public on the Statistics Canada website
+
+## Variables
+List the key variables that will be analyzed, such as housing construction rates, housing availability indices, and regional categorizations.
+
+**Geo:** This is a nominal variable that indicates the geographic location of the housing units. It has 16 possible values, representing Canada and its 10 provinces and 5 territories. For example, “Canada” means the whole country, while “Alberta” means the province of Alberta.  
+
+**HousingType:** This is a nominal variable that indicates the type of housing units. It has 4 possible values, representing the total, single-detached, semi-detached, and row and apartment housing types. For example, “Total housing type” means all types of housing units, while “Row and apartment” means housing units that are attached to other units horizontally or vertically.
+
+**DwellingOccupation:** This is a nominal variable that indicates the occupation status of the housing units. It has 2 possible values, representing occupied and unoccupied housing units. For example, “Private dwellings occupied” means housing units that are occupied by usual residents, while “Private dwellings unoccupied” means housing units that are vacant or temporarily occupied by foreign or temporary residents.
+
+**DwellingType:** This is a nominal variable that indicates the type of dwelling units. It has 6 possible values, representing mobile, single-detached, semi-detached, row, apartment, and other dwelling types. For example, “Mobile house” means a dwelling unit that can be moved from one location to another, while “Apartment” means a dwelling unit that is part of a building that contains five or more dwelling units.
+
+**TenureType:** This is a nominal variable that indicates the tenure status of the housing units. It has 3 possible values, representing owned, rented, and band housing units. For example, “Owned” means housing units that are owned by the occupants, while “Band housing” means housing units that are located on an Indian reserve or settlement and are administered by a band or tribal council.
+
+**Value:** This is a ratio variable that indicates the number of housing units. It is a positive integer that represents the count of housing units for each combination of the other variables. For example, 39394 means that there are 39394 mobile houses that are unoccupied in Canada in January 2022.
+
+
